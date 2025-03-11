@@ -24,9 +24,10 @@ body {
 }
 
 h1 {
+    position: absolute
     font-size: 25px;
-    color: #f5e0f1;
-    
+    color:rgb(235, 228, 233);
+    left: 15%;
 }
 
 .input-container{
@@ -36,6 +37,7 @@ h1 {
     margin: 0px 50px;
     margin-top: 16px;
     margin-bottom: 16px;
+    right: 7%;
 }
 
 .input-container input {
@@ -76,15 +78,25 @@ h1 {
 .sub-button {
     width: 77%;
     height: 40px;
-    position: relative;
-    color: #f1f0f0;
-    background-color: #5100b5;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(111, 21, 219);
     border-radius: 6px;
     border: none;
+    position: relative;
+    left: 11%;
     margin-top: 20px;
     margin-bottom: 20px;
-    left: 11%;
+    cursor: pointer; /* Faz o mouse virar uma mãozinha */
+    transition: all 0.3s ease-in-out; /* Suaviza a animação */
 }
+
+/* Efeito ao passar o mouse */
+.sub-button:hover {
+    background-color: rgb(91, 0, 199); /* Tom mais escuro */
+    transform: scale(1.05); /* Aumenta um pouco o botão */
+}
+
 
 
 .cadastro p  {
